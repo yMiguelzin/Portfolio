@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="icon" href="img/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Miguel
+        <span>Marostica</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Educação</a>
+            <a href="#services">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Miguel</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>Meu nome é Miguel Marostica, tenho 19 anos e sou formado em Desenvolvimento de Sistemas, pelo Ensino Médio Integrado ao Técnico. Atualmente, estou cursando a graduação em Análise e Desenvolvimento de Sistemas na Uninter. Estou em busca da minha primeira experiência profissional nas áreas de Desenvolvimento Web ou Suporte Técnico, com o objetivo de aplicar os conhecimentos adquiridos e continuar aprendendo na prática.</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/miguel-henrique-m/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/yMiguelzin"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/miguelh.mp/"><i class='bx bxl-instagram-alt' ></i></a>               
+            </div>
+
+            <div class="btn-group">
+                <a href="#home" class="btn">Sobre</a>
+                <a href="#contact" class="btn">Contato</a>
+            </div>
+        </div>
+            <div class="home-img">
+                <img src="img/image.png" alt="">
+            </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+    
+        <div class="timeline-items">
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021-2023</div>
+                <div class="timeline-content">
+                    <h3>Ensino Técnico</h3>
+                    <p>Concluí o Ensino Médio integrado ao curso técnico em Desenvolvimento de Sistemas na Escola Técnica Estadual de Nova Odessa.</p>
+                </div>     
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024-2027</div>
+                <div class="timeline-content">
+                    <h3>Graduação</h3>
+                    <p>Atualmente, estou cursando Tecnologia em Desenvolvimento de Sistemas no Centro Universitário Internacional Uninter, polo de Americana. Continuo aprimorando meus conhecimentos em programação, desenvolvimento web e suporte técnico.</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025-2027</div>
+                <div class="timeline-content">
+                    <h3>Curso de Inglês</h3>
+                    <p>Estou também me dedicando ao aprendizado de inglês, o que tem me ajudado a expandir meus horizontes, tanto no campo da tecnologia quanto na comunicação profissional.</p>
+                </div>   
+            </div>
+    
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+        <h2 class="heading">Meus Projetos</h2>
+    
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>🪂 Diário Online Full-Stack com Python e Django</h4>
+                    <p>Projeto para gerenciar um diário online, permitindo que os usuários criem, editem e visualizem entradas de forma simples. Utiliza Python e Django para proporcionar uma interface intuitiva e funcional.</p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>🧑🏻‍⚕️ Sistema de Gerenciamento para Psicólogos com PHP</h4>
+                    <p>Sistema para psicólogos gerenciarem pacientes e consultas. Desenvolvido com PHP e MySQL, oferece funcionalidades de cadastro, edição e agendamento de consultas.</p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>✂️ Encurtador de Links com Django Ninja</h4>
+                    <p>Encurtador de links com recursos como expiração, limites de cliques, QR Codes e estatísticas. Desenvolvido em Django Ninja para uma experiência simples e eficiente.</p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>🏥 Sistema de Gestão Hospitalar com PHP</h4>
+                    <p>Sistema para médicos gerenciarem consultas hospitalares, incluindo cadastro de pacientes e agendamento de consultas. Desenvolvido com PHP e MySQL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="heading">Contate <span>Me</span></h2>
+    
+        <form id="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="nome" placeholder="Nome Completo" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="number" name="telefone" placeholder="Número de Telefone" required>
+                    <input type="text" name="assunto" placeholder="Assunto" required>
+                </div>
+            </div>
+    
+            <div class="input-group-2">
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+                <input type="submit" value="Enviar Mensagem" class="btn">
+            </div>
+        </form>
+    
+        <div id="popup" class="popup">
+            <div id="popup-message"></div>
+        </div>
+
+    </section>
+      
+<footer class="footer">
+    <div class="social">
+        <a href="https://www.linkedin.com/in/miguel-henrique-m/"><i class='bx bxl-linkedin' ></i></a>
+        <a href="https://github.com/yMiguelzin"><i class='bx bxl-github' ></i></a>
+        <a href="https://www.instagram.com/miguelh.mp/"><i class='bx bxl-instagram-alt' ></i></a> 
+    </div>
+
+    <ul class="list">
+        <li>
+            <a href="#services">Projetos</a>
+        </li>
+        <li>
+            <a href="#home">Sobre</a>
+        </li>
+        <li>
+            <a href="#contact">Contato</a>
+        </li>
+        <p class="copyright">
+            © 2025 Miguel Marostica. Todos os direitos reservados.
+        </p>
+    </ul>
+</footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
